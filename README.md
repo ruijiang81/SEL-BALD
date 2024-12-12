@@ -22,12 +22,11 @@ datasets to demonstrate the effectiveness of our proposed algorithms.*
 
 
 ### Run Experiments
-# the synthetic example 
 
 ```
-python ./src/mlp_mc_coldstart_syn.py --dataset synthetic_circle --method naive_bald --lr 1e-2 --bs 8 --seed 3 --nepoch 600 --qs 5 --steps 100 --beta 0.75;
-python ./src/mlp_mc_coldstart_syn.py --dataset synthetic_circle --method e_bald --lr 1e-2 --bs 8 --seed 3 --nepoch 600 --qs 5 --steps 30 --beta 0.75;
-python ./src/mlp_mc_coldstart_syn.py --dataset synthetic_circle --method joint_bald --lr 1e-2 --bs 8 --seed 3 --nepoch 800 --qs 5 --steps 40 --beta 0.75;
-python ./src/mlp_mc_coldstart_syn.py --dataset synthetic_circle --method joint_bald_ucb --lr 1e-2 --bs 8 --seed 3 --nepoch 500 --qs 5 --steps 40 --beta 0.75;
-python ./src/mlp_mc_coldstart_syn.py --dataset synthetic_circle --method joint_bald_ts --lr 1e-2 --bs 8 --seed 3 --nepoch 500 --qs 5 --steps 40 --beta 0.75;
+bash run_syn.sh 
+bash run_adult.sh 
+bash run_mushroom.sh 
 ```
+
+In ALIR, the benefit of Joint-BALD and UCB/TS variants are significant when the human discretion behaviors are unknown and heterogeneous. When human discretion behaviors are homogeneous, Naive-BALD remains optimal. When human discretion behaviors are known, e-BALD is optimal. 
