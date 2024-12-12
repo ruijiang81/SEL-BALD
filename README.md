@@ -11,8 +11,8 @@ active learning methods assume humans will always label the instances selected b
 the machine learning model, in many critical applications, humans may decline
 to label instances selected by the machine learning model due to reasons such
 as regulation constraint, domain knowledge, or algorithmic aversion, thus not
-sample efficient. In this paper, we propose the Active Learning with Instance
-Rejection (ALIR) problem, which is a new active learning problem that considers
+sample efficient. In this paper, we study the Active Learning with Instance
+Rejection (ALIR) problem, which is an active learning problem that considers
 the human discretion behavior for high-stakes decision making problems. We
 propose new active learning algorithms under deep Bayesian active learning for
 selective labeling (SEL-BALD) to address the ALIR problem. Our algorithms
